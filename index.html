@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebAR Glasses Try-On</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/ar.js/aframe/build/aframe-ar.min.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+
+  <!-- AR Scene -->
+  <a-scene embedded arjs>
+    <!-- Camera -->
+    <a-camera-static></a-camera-static>
+
+    <!-- Glasses Model -->
+    <a-entity 
+      position="0 0 0"
+      scale="0.5 0.5 0.5"
+      rotation="0 0 0"
+      gltf-model="sample (1).glb">
+    </a-entity>
+
+    <!-- Optional Light for better rendering -->
+    <a-light type="directional" intensity="1" position="0 1 0"></a-light>
+  </a-scene>
+
+</body>
+</html>
